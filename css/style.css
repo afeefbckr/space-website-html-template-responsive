@@ -1,0 +1,532 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	font-family: open_sansregular, Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #333;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+input,textarea,select{
+	font-family: open_sansregular, Arial, Helvetica, sans-serif;
+}
+
+a{
+	color: #333;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: open_sanslight, Arial;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+#home{
+	background-color: goldenrod;
+	padding:2% 0 7% ;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header h1{
+	width: 80px;
+}
+header h1 a{
+	display: block;
+}
+header h1 a img{
+	width: 100%;
+}
+header ul{
+	display: flex;
+}
+header ul li{
+	margin-right: 35px;
+}
+header ul li:last-child{
+	margin-right: 0;
+}
+header ul li a{
+	color: white;
+}
+#spotlight{
+	margin-top: 150px;
+	text-align: center;
+}
+#spotlight h1{
+	font-size: 50px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+#spotlight p{
+	color: #fff;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#spotlight a.button{
+	background-color: black;
+	color: #fff;
+	border-radius: 45px;
+	padding: 20px 55px;
+	font-size: 15px;
+	display: inline-block;
+}
+#about{
+background: #2d2d2d;
+color: #fff;
+}
+#about section.widget{
+	display: flex;
+	flex-wrap: wrap;
+}
+#about section.widget div.a{
+	width: 33%;
+	padding: 100px 60px;
+	text-align: center;
+}
+#about section.widget div.b{
+	width: 33%;
+	padding: 100px 60px;
+	text-align: center;
+	background-color: #262626;
+	border-left:1px solid #d1a223;
+	border-right:1px solid #d1a223;
+	
+
+}
+#about section.widget div.a h4{
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+#about section.widget div.a img{
+	width: 100%;
+}
+#about section.widget div.b h4{
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+#about section.widget div.b img{
+	width: 100%;
+}
+
+#content{
+	padding: 70px 0;
+}
+#content section.wrapper h1{
+	text-align: center;
+	margin-bottom: 60px;
+	font-size: 45px;
+	color:#d1a223;
+	font-family: 'open_sanssemibold';
+}
+#content section.wrapper div.spots{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#content section.wrapper div.spots div.grolius{
+	width: 48%;
+	text-align: center;
+	padding: 60px;
+	box-shadow: 0 0 5px grey
+}
+
+#content section.wrapper div.spots div.grolius img{
+	width: 90px;
+}
+#content section.wrapper div.spots div.grolius h1{
+	font-size: 31px;
+	font-weight: 700;
+}
+#content section.wrapper div.spots div.techpe{
+	width: 48%;
+	text-align: center;
+	padding: 60px;
+	box-shadow: 0 0 5px grey
+}
+#content section.wrapper div.spots div.techpe img{
+	width: 90px;
+}
+#content section.wrapper div.spots div.techpe h1{
+	font-size: 31px;
+	font-weight: 700;
+}
+
+
+#content section.wrapper div.spots div.grolius a.button{
+	padding: 16px 24px;
+	border-radius: 30px;
+	color: #fff;
+	background-color: #d1a223;
+	display: inline-block;
+	
+}
+#content section.wrapper div.spots div.techpe a.button{
+	padding: 16px 24px;
+	border-radius: 30px;
+	color: #fff;
+	background-color: #d1a223;
+	display: inline-block;
+	
+}
+#whyspace{
+	
+	
+	background-color: rgb(153, 106, 6);
+}
+#whyspace div.why{
+	display: flex;
+	justify-content: space-between;
+}
+#whyspace div.why div.space1{
+	margin-top: 100px;
+	width: 38%;
+
+}
+#whyspace div.why div.space1 img{
+	width: 100%;
+}
+#whyspace div.why div.space2{
+	margin-top: 100px;
+	
+	width: 48%;
+}
+#whyspace div.why div.space2 h1{
+	font-size: 40px;
+	color: #fff;
+}
+#whyspace div.why div.space2 p{
+	
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 50px;
+}
+
+#howspace{
+	width: 100%;
+	background-color: white;
+}
+#howspace div.how{
+	display: flex;
+	justify-content: space-between;
+}
+#howspace div.how div.space4{
+	margin-top: 100px;
+	width: 48%;
+
+}
+#howspace div.how div.space4 img{
+	width: 100%;
+}
+
+
+#howspace div.how div.space3{
+	margin-top: 100px;
+	
+	width: 48%;
+}
+#howspace div.how div.space3 h1{
+	font-size: 40px;
+	color:black;
+}
+#howspace div.how div.space3 p{
+	
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 50px;
+}
+@media all and (max-width:980px){
+	#about section.widget div.a{
+		padding: 60px 40px;
+	}
+	#about section.widget div.b{
+		padding: 60px 40px;
+	}
+		
+	#about section.widget div.c{
+		padding: 60px 40px;
+	}
+}
+
+
+
+
+
+@media all and (max-width:768px){
+	#about section.widget div.a{
+		width: 100%;
+	}
+	#about section.widget div.b{
+		width: 100%;
+		border-top: 1px solid goldenrod;
+		border-bottom: 1px solid goldenrod;
+
+
+	}
+	#about section.widget div.c{
+		width: 100%;
+
+}
+}
+
+
+@media all and (max-width:640px){
+	#about .widget{
+		display: block;
+		width: 100%;
+	}
+	#about .widget div.a h4 img{
+		width: 60px;
+	}
+	#about .widget div.b h4 img{
+		width: 58px;
+	}
+	#content section.wrapper div.spots div.grolius{
+		width: 100%
+				
+	}
+	#content section.wrapper div.spots div.techpe{
+		width: 100%;
+								
+	}
+
+	#whyspace div.why{
+		flex-wrap: wrap;
+	}
+	
+	#whyspace div.why div.space1{
+	    width: 100%;
+		text-align: center;
+	}
+	#whyspace div.why div.space2{
+		width: 100%;
+	}
+	#whyspace div.why div.space2 p{
+		bottom: 30px;
+		position: relative;
+		
+	}
+	#whyspace div.why div.space2{
+	    
+	    position: relative;}
+	#whyspace div.why div.space2 h1{
+	    bottom: 50px;
+		position: relative;}
+	#howspace div.how{
+		flex-wrap: wrap;
+	}
+	#howspace div.how div.space3{
+		width: 100%;
+	}
+	#howspace div.how div.space3 p {
+		bottom: 30px;
+		
+		
+		display: block;
+	}
+	#howspace div.how div.space4{
+	width: 100%;
+    }	
+    #spotlight h1 {
+		font-size: 30px;
+		bottom: 50px;
+		position: relative;
+	}
+
+
+
+
+}
+@media all and (max-width:480px){
+	#home div.left{
+		margin: 0 auto;
+	}
+	#home section.wrapper header div.right ul{
+		display: none;
+	}
+	#spotlight h1{
+		font-size: 25px;
+	}
+	#spotlight a.button{
+		padding: 10px 22px;
+	}
+	
+		
+	
+	#about section.widget p{
+		
+		align-items: center;		
+	}		
+
+    #about section.widget div.a img{
+		width: 50%;
+		
+		margin-top: 40px;
+	}
+	#about section.widget{
+		
+		display: block;
+		width: 100%;
+	}
+    #about section.widget div.b img{
+		width: 50%;
+		
+		margin-top: 40px;
+	}
+	#about section.widget div.b{
+		border: none;
+	    background: #2d2d2d;
+		
+	}
+	#content section.wrapper div.spots{
+	    display: flex;
+		flex-wrap: wrap;
+	
+	}
+	#content section.wrapper div.spots h1{
+		font-size: 20px;
+		
+	}
+	
+		
+			
+	
+	
+			
+	#about section.widget div.b img{
+		width: 50%;
+		
+		margin-top: 40px;
+	}
+	#home section.wrapper header div.right ul{
+	margin-right: 30px;
+								
+	}
+	 #spotlight a.button{
+		padding: 10px 22px;
+	}
+
+	#about section.widget h1{
+		
+	}
+	#about section.widget p{
+		
+		align-items: center;
+	}
+	#about section.widget div.a img{
+		width: 50%;
+		
+		margin-top: 40px;
+	}
+	
+	#about section.widget div.b img{
+	
+	
+	
+	}
+	#about section.widget div.b{
+	border-top: 1px solid goldenrod;
+	border-bottom: 1px solid goldenrod;
+	background: #2d2d2d;
+	width: 420p;
+	}
+	#content section.wrapper div.spots{
+	display: block;
+	}
+	#content section.wrapper div.spots h1{
+	font-size: 20px;
+	}
+	#content section.wrapper div.spots p{
+	
+	}
+	#content section.wrapper div.spots div.grolius{
+	
+	}
+	#content section.wrapper div.spots div.techpe{
+	
+	}
+	#about section.widget div.b img{
+	
+	
+		
+	}
+	#howspace div.how{
+	flex-wrap: wrap;
+	}
+	#howspace div.how div.space3 p{
+	font-size: 15px;
+	width: 100%;
+	}	
+	#whyspace div.why div.space2 p {
+		font-size: 15px;
+	}
+	#howspace div.how div.space3 h1{
+		bottom: 50px;
+		position: relative;
+	}
+	
+	#whyspace div.why div.space2{
+		width: 100%;
+	}
+	
+
+}
+
